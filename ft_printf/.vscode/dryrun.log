@@ -1,0 +1,13 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/otalha/ft_printf'
+gcc -Wall -Wextra -Werror   -c -o ft_printf.o ft_printf.c
+gcc -Wall -Wextra -Werror   -c -o ft_print_hex.o ft_print_hex.c
+gcc -Wall -Wextra -Werror   -c -o ft_print_ptr.o ft_print_ptr.c
+gcc -Wall -Wextra -Werror   -c -o ft_print_unsigned.o ft_print_unsigned.c
+gcc -Wall -Wextra -Werror   -c -o ft_printchar.o ft_printchar.c
+gcc -Wall -Wextra -Werror   -c -o ft_printnbr.o ft_printnbr.c
+gcc -Wall -Wextra -Werror   -c -o ft_printpercent.o ft_printpercent.c
+gcc -Wall -Wextra -Werror   -c -o ft_printstr.o ft_printstr.c
+ar -rc libftprintf.a ./ft_printf.o ./ft_print_hex.o ./ft_print_ptr.o ./ft_print_unsigned.o ./ft_printchar.o ./ft_printnbr.o ./ft_printpercent.o ./ft_printstr.o
+make: Leaving directory `/Users/otalha/ft_printf'
+ 
